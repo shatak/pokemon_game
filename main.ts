@@ -802,7 +802,7 @@ function setArena (p1: Sprite, p2: Sprite) {
         music.play(music.stringPlayable("C5 A B G A F G E ", 120), music.PlaybackMode.LoopingInBackground)
         tiles.placeOnTile(p2, tiles.getTileLocation(7, 5))
         tiles.placeOnTile(p1, tiles.getTileLocation(2, 6))
-        controller.moveSprite(p1, 20, 20)
+        setMovement(20)
     } else {
         isBattling = false
         game.showLongText("You don't have any pokeballs! Go to the PokeCentre to get more.", DialogLayout.Bottom)
